@@ -72,4 +72,7 @@ else:
     )
     st.plotly_chart(fig, use_container_width=True)
 
-
+import os
+file_path = 'data/st06_data.csv'  # Replace with your CSV file path
+file_size = os.path.getsize(file_path)
+print(f"The size of {file_path} is {file_size} bytes.")
